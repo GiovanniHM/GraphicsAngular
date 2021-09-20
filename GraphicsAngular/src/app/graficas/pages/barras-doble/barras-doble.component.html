@@ -2,11 +2,19 @@
 <hr />
 <div class="row">
   <div class="col-md-6">
-    <app-grafica-barra>
+    <app-grafica-barra
+     [horizontal]= "true"
+     [barChartData]= "productoData"
+     [barChartLabels]= "proveedoresLabels"
+     >
     </app-grafica-barra>
   </div>
   <div class="col-md-6">
-    <app-grafica-barra>
+    <app-grafica-barra
+     [horizontal]= "false"
+     [barChartData]= "productoData"
+     [barChartLabels]= "proveedoresLabels"
+     >
   </app-grafica-barra>
 </div>
 </div>
